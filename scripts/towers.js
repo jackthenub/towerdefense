@@ -160,11 +160,11 @@ tower.slow = {
             cooldownMax: 60,
             cooldownMin: 60,
             cost: 150,
-            range: 2,
+            range: 4,
             type: 'poison',
             // Methods
             onHit: function(e) {
-                e.applyEffect('poison', 60);
+                e.applyEffect('poison', 80);
             }
         }
     ]
@@ -184,7 +184,7 @@ tower.sniper = {
     // Stats
     cooldownMax: 100,
     cooldownMin: 60,
-    cost: 150,
+    cost: 350,
     damageMax: 100,
     damageMin: 100,
     range: 9,
@@ -227,9 +227,9 @@ tower.sniper = {
             // Stats
             cooldownMax: 120,
             cooldownMin: 100,
-            cost: 300,
-            damageMax: 200,
-            damageMin: 200,
+            cost: 400,
+            damageMax: 3000,
+            damageMin: 1500,
             range: 11,
             type: 'piercing',
             // Methods
